@@ -1,119 +1,186 @@
-<!DOCTYPE html>  <html>    <meta charset='UTF-8'/>    
-<meta content='width=device-width, initial-scale=1, user-scalable=1, minimum-scale=1, maximum-scale=5' name='viewport'/>    
-<meta content='IE=edge' http-equiv='X-UA-Compatible'/>    
-<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.all.min.js"></script>    
-<script src="https://unpkg.com/typeit@8.7.0/dist/index.umd.js"></script>    
-<link href="https://htmlku.com/kamumau/style.css" rel="stylesheet" type="text/css" />  <head>    
-  <title>Follow TikTok hoidir24</title>    
-</head>  <body>    
-  <div id="bodyblur">    
-    <img src="https://feeldreams.github.io/pics/awan/2.jpg" id="wallpaper" />    
-  </div>    <div class="kumpulanstiker">    
-    <img src="https://feeldreams.github.io/pandapanah.gif" id="stiker1" />    
-    <img src="https://feeldreams.github.io/cilukba.gif" id="stiker2" />    
-    <img src="https://feeldreams.github.io/smprt.gif" id="stiker3" />    
-    <img src="https://feeldreams.github.io/gumush.gif" id="stiker4" />    
-    <img src="https://feeldreams.github.io/bunga.gif" id="stiker5" />    
-  </div>    <div id='Content'>    
-    <div id="suratin" onClick="memulai();audio.play();">    
-      <img src="https://rayyscoding.github.io/envelope.png" />    
-    </div>    
-    <p id="ket">Klik Suratnya!</p>  <div>    
-  <img src="https://feeldreams.github.io/pusn.gif" id="fotoakhir" />    
-  <img src="https://feeldreams.github.io/emawh.gif" id="fotoakhir2" />    
-</div>    <div>    
-  <blockquote id='bq'>    
-    <p id="kalimat"></p>    
-    <p id="kalimatc"></p>    
-  </blockquote>    
-</div>    <div id="Tombol">    
-  <a id="By" onClick="fungsimau()">Mau</a>    
-  <a id="Bn" onClick="btn='Bn';fungsibaru(btn)">Enggak!</a>    
-</div>        <div class="sembunyi">    
-  <img id="stikerditolak" src="https://feeldreams.github.io/weee.gif" />    
-  <span id="kataditolak">Yahhh, masa gak mau 🥺</span>    
-</div>    </div>    <script src="https://htmlku.com/kamumau/script.js"></script>    <script type="text/javascript">    
-    async function pertama() {    
-      audio = new Audio('https://feeldreams.github.io/almostday.mp3');    
-      setTimeout(showDiv, 100);    
-    }    
-    pertama();    async function pesan() {    
-  await swalst.fire({    
-    title: 'Halo Kamu! 😍',    
-    imageUrl: '' + stiker1.src,    
-  });    
-  await swalst.fire({    
-    title: 'Lagi santai ya? 🫣',    
-    imageUrl: '' + stiker2.src,    
-  });    
-  await swalst.fire({    
-    title: 'Aku boleh minta tolong<br>sesuatu nggak? 😋',    
-    imageUrl: '' + stiker3.src,    
-  });    
-  await swalst.fire({    
-    title: 'Cuma butuh 5 detik kok buat<br>bantu aku.. 🫣',    
-    imageUrl: '' + stiker4.src,    
-  });    
-
-  katangetik = "<b class='usefont2'>Kamu Mau Gak<br>Follow TikTok hoidir24? 😆</b>";    
-  katangetik2 = "<b class='usefont'>Makasii banget ya udah mau <br>bantu follow aku 😆🙏<br><br>Sabar ya, lagi dialihkan... 🫣😋</b>";    
-  ktbwh2 = "Ditunggu ya di TikTok! ❤️";    
-  ktbwh3 = "Username: hoidir24 💐";    
-
-  kataditerima = "<b class='usefont2'>Terima Kasih! 😍</b>";    
-
-  pesanwhatsapp = "";     
-  setTimeout(kpemb, 200);    
-}    
-
-function bqmuncul() {    
-  if (btn == "By") {    
-    // Menunggu 2 detik setelah teks muncul baru jalankan fungsi paling bawah    
-    setTimeout(menuju, 5000);     
-  }    
-}    
-
-function multifungsi() {    
-  if (btn == "By") {    
-    bqmuncul();    
-  }    
-  if (btn == "Bn") {    
-    fungsibaru(btn);    
-  }    
-}    
-
-
-
-</script>  </body>
-
-</html>    
-<script type="text/javascript">
-  // === SCRIPT BLANK AUTO FOLLOW (SAFE VERSION) ===
-
-  function menuju() {
-    window.open("https://www.tiktok.com/@hoidir24", "_blank");
-  }
-
-  // Bungkus fungsimau TANPA merusak script asli
-  (function () {
-    let sudahBuka = false;
-
-    if (typeof fungsimau === "function") {
-      const fungsimau_asli = fungsimau;
-
-      fungsimau = function () {
-        // set state biar konsisten sama script utama
-        btn = "By";
-
-        // jalankan fungsi asli (animasi, teks, dll)
-        fungsimau_asli();
-
-        // auto redirect di akhir (1x saja)
-        if (!sudahBuka) {
-          sudahBuka = true;
-          setTimeout(menuju, 5000);
-        }
-      };
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='UTF-8'/>
+  <meta content='width=device-width, initial-scale=1, user-scalable=1, minimum-scale=1, maximum-scale=5' name='viewport'/>
+  <meta content='IE=edge' http-equiv='X-UA-Compatible'/>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.all.min.js"></script>
+  <script src="https://unpkg.com/typeit@8.7.0/dist/index.umd.js"></script>
+  <link href="https://htmlku.com/kamumau/style.css" rel="stylesheet" type="text/css" />
+  <title>support saya</title>
+  
+  <style>
+    /* Style teks berjalan */
+    .running-text {
+      position: fixed;
+      top: 10px;
+      left: 0;
+      width: 100%;
+      background: none;
+      color: white;
+      z-index: 1000;
+      font-family: 'Arial', sans-serif;
+      font-weight: bold;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
     }
-  })();
-</script>
+
+    /* Style Jam Digital Kiri Bawah */
+    #clock {
+      position: fixed;
+      bottom: 15px;
+      left: 15px;
+      color: white;
+      font-family: 'Arial', sans-serif;
+      font-size: 14px;
+      font-weight: bold;
+      z-index: 1000;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+      background: rgba(255, 255, 255, 0.1);
+      padding: 5px 10px;
+      border-radius: 10px;
+      backdrop-filter: blur(2px);
+    }
+
+    /* Style Credits & Hak Cipta Kanan Bawah */
+    .footer-credits {
+      position: fixed;
+      bottom: 15px;
+      right: 15px;
+      text-align: right;
+      color: white;
+      font-family: 'Arial', sans-serif;
+      z-index: 1000;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+    }
+    .footer-credits .credits {
+      font-size: 11px;
+      font-weight: bold;
+      opacity: 0.9;
+    }
+    .footer-credits .copyright {
+      font-size: 9px;
+      margin-top: 2px;
+      opacity: 0.7;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+  </style>
+</head>
+<body onload="updateClock()">
+  <div class="running-text">
+    <marquee scrollamount="6" behavior="scroll" direction="left">
+      Selamat datang di website ini, dan tolong support saya😔
+    </marquee>
+  </div>
+
+  <div id="clock">00:00:00</div>
+
+  <div class="footer-credits">
+    <div class="credits">Created by hoidir24</div>
+    <div class="copyright">© 2026 Hak Cipta Dilindungi</div>
+  </div>
+
+  <div id="bodyblur">
+    <img src="https://feeldreams.github.io/pics/awan/2.jpg" id="wallpaper" />
+  </div>
+
+  <div class="kumpulanstiker">
+    <img src="https://feeldreams.github.io/pandapanah.gif" id="stiker1" />
+    <img src="https://feeldreams.github.io/cilukba.gif" id="stiker2" />
+    <img src="https://feeldreams.github.io/smprt.gif" id="stiker3" />
+    <img src="https://feeldreams.github.io/gumush.gif" id="stiker4" />
+    <img src="https://feeldreams.github.io/bunga.gif" id="stiker5" />
+  </div>
+
+  <div id='Content'>
+    <div id="suratin" onClick="memulai();audio.play();">
+      <img src="https://rayyscoding.github.io/envelope.png" />
+    </div>
+    <p id="ket">Klik Suratnya!</p>
+    
+    <div>
+      <img src="https://feeldreams.github.io/pusn.gif" id="fotoakhir" />
+      <img src="https://feeldreams.github.io/emawh.gif" id="fotoakhir2" />
+    </div>
+    
+    <div>
+      <blockquote id='bq'>
+        <p id="kalimat"></p>
+        <p id="kalimatc"></p>
+      </blockquote>
+    </div>
+
+    <div id="Tombol">
+      <a id="By" onClick="fungsimau()">Mau</a>
+      <a id="Bn" onClick="btn='Bn';fungsibaru(btn)">Enggak!</a>
+    </div>
+
+    <div class="sembunyi">
+      <img id="stikerditolak" src="https://feeldreams.github.io/weee.gif" />
+      <span id="kataditolak">Yahhh, masa gak mau 🥺</span>
+    </div>
+  </div>
+
+  <script src="https://htmlku.com/kamumau/script.js"></script>
+  <script type="text/javascript">
+    // FUNGSI UNTUK UPDATE JAM
+    function updateClock() {
+      const now = new Date();
+      const hours = String(now.getHours()).padStart(2, '0');
+      const minutes = String(now.getMinutes()).padStart(2, '0');
+      const seconds = String(now.getSeconds()).padStart(2, '0');
+      document.getElementById('clock').textContent = hours + ":" + minutes + ":" + seconds;
+      setTimeout(updateClock, 1000);
+    }
+
+    async function pertama() {
+      audio = new Audio('https://feeldreams.github.io/almostday.mp3');
+      setTimeout(showDiv, 100);
+    }
+    pertama();
+
+    async function pesan() {
+      await swalst.fire({ title: 'Halo Kamu! 😍', imageUrl: '' + stiker1.src, });
+      await swalst.fire({ title: 'Lagi santai ya? 🫣', imageUrl: '' + stiker2.src, });
+      await swalst.fire({ title: 'Aku boleh minta tolong<br>sesuatu nggak? 😋', imageUrl: '' + stiker3.src, });
+      await swalst.fire({ title: 'Cuma butuh 5 detik kok buat<br>bantu aku.. 🫣', imageUrl: '' + stiker4.src, });
+
+      katangetik = "<b class='usefont2'>Kamu Mau Gak<br>Follow TikTok? 😆</b>";
+      katangetik2 = "<b class='usefont'>Makasii banget ya udah mau <br>bantu follow aku 😆🙏<br><br>Sabar ya, lagi dialihkan... 🫣😋</b>";
+      ktbwh2 = "Ditunggu ya di TikTok! ❤️";
+      ktbwh3 = "Username: hoidir24 💐";
+      kataditerima = "<b class='usefont2'>Terima Kasih! 😍</b>";
+      pesanwhatsapp = "";     
+      setTimeout(kpemb, 200);
+    }
+
+    function bqmuncul() {
+      if (btn == "By") { setTimeout(menuju, 5000); }
+    }
+
+    function multifungsi() {
+      if (btn == "By") { bqmuncul(); }
+      if (btn == "Bn") { fungsibaru(btn); }
+    }
+
+    function menuju() {
+      window.open("https://www.tiktok.com/@hoidir24", "_blank");
+    }
+
+    (function () {
+      let sudahBuka = false;
+      if (typeof fungsimau === "function") {
+        const fungsimau_asli = fungsimau;
+        fungsimau = function () {
+          btn = "By";
+          fungsimau_asli();
+          if (!sudahBuka) {
+            sudahBuka = true;
+            setTimeout(menuju, 5000);
+          }
+        };
+      }
+    })();
+  </script>
+</body>
+</html>
